@@ -1,0 +1,66 @@
+.aside-menu {
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    display: inline-block;
+    width: 100%;
+    margin-left: 15%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.title {
+    vertical-align: 11px;
+    font-size: 1.5em;
+    color: #202641;
+}
+
+.logo-icon {
+    font-size: 2.5em;
+}
+
+.title-colored {
+    color: #f19089;
+}
+
+.menu-option {
+    transition: 200ms background-color ease-in-out;
+    transition: 250ms border-left ease-in-out;
+    color: rgba(2, 2, 54, 0.7);
+    border-left: 8px solid transparent;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.menu-option:hover {
+    transition: 200ms background-color ease-in-out;
+    cursor: pointer;
+    background-color: rgba(242, 152, 152, 0.6);
+}
+
+.menu-option-content {
+    width: 135px;
+    margin: 0 auto 0 auto;
+}
+
+.menu-option-active {
+    transition: 300ms border-left;
+    border-left: 8px solid #FF9DA9;
+    background-color: #FFD6CC;
+}
+
+.logo-menu-option {
+    font-size: 1.8em;
+    color: #202641;
+}
+
+.title-menu-option {
+    vertical-align: 7px;
+    margin-left: 13px;
+}

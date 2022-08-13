@@ -1,0 +1,61 @@
+<div class="main-content">
+    <h1 class="title">Dashboard</h1>
+
+    <div class="row">
+        <div class="col xl4 s12 no-select" *ngFor="let badge of badges">
+            <div class="badge badge-{{badge.color}}">
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full" [style.transform]="badge.percent | mainDrawCircle">
+                            <div class="fill" [style.transform]="badge.percent | mainDrawCircle"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill" [style.transform]="badge.percent | mainDrawCircle"></div>
+                        </div>
+                        <div class="inside-circle {{badge.color}}">{{ badge.percent }}%</div>
+                    </div>
+                </div>
+
+                <i class="material-symbols-outlined badge-icon">{{ badge.icon }}</i>
+                <span class="badge-title">{{ badge.title }}</span>
+                <span class="badge-value">{{ badge.price | currency: 'USD': 'symbol' : '1.0-0'  }}</span>
+                <span class="badge-date">{{ badge.date | date }}</span>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-recent-orders">Recent Orders</h3>
+
+    <!-- Table -->
+    <div class="row">
+        <div class="col xl12">
+            <div class="table">
+                <div class="row">
+                    <div class="col xl3 table-title">Product</div>
+                    <div class="col xl3 table-title">Tracking ID</div>
+                    <div class="col xl3 table-title">Date</div>
+                    <div class="col xl3 table-title">Status</div>
+                </div>
+                <div class="row" *ngFor="let order of orders">
+                    <div class="col xl3">
+                        {{ order.product }}
+                    </div>
+
+                    <div class="col xl3">
+                        {{ order.tracking_id }}
+                    </div>
+
+                    <div class="col xl3">
+                        {{ order.date | date }}
+                    </div>
+
+                    <div class="col xl3">
+                        <div class="table-status no-select" [ngClass]="order.status | mainTableStatus">
+                            <span>{{ order.status | mainTableStatusText }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

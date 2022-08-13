@@ -1,0 +1,23 @@
+<div class="aside-menu no-select">
+    <div class="logo">
+        <i class="material-symbols-outlined logo-icon">dashboard</i>
+        <span class="title">
+            M<span class="title-colored">a</span>rket
+        </span>
+    </div>
+
+    <div class="menu">
+        <div class="menu-option" [ngClass]="option | menuOptionsActive"
+            (click)="setMenuOption(option)"
+            *ngFor="let option of menu_options">
+            <div class="menu-option-content">
+                <i class="material-symbols-outlined logo-menu-option">
+                    {{ option.icon }}
+                </i>
+                <span class="title-menu-option">
+                    {{ option.title }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

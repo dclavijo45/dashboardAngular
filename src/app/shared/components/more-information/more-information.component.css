@@ -1,0 +1,63 @@
+:host {
+    --color-principal-text: #202641;
+}
+
+.more-information {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+}
+
+.title {
+    margin-top: 60px;
+    color: var(--color-principal-text);
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.content {
+    padding-top: 20px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content-profile-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+.img-profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    color: var(--color-principal-text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-transcription {
+    font-size: 12px;
+    color: var(--color-principal-text);
+}
+
+.profile-reported-time {
+    font-size: 12.5px;
+    display: block;
+    margin-top: 10px;
+}
+
+.title-chart {
+    margin-top: 60px;
+    color: var(--color-principal-text);
+    margin-bottom: 20px;
+    margin-left: 10px;
+}

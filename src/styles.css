@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background: linear-gradient(90deg, #FFE0BA 0%, #F8CDF1 95%);
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+/* SCROLL CUSTOM - Estilos para motores Webkit y blink (Chrome, Safari, Opera... )  */
+
+.custom-scroll-1::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.custom-scroll-1::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.custom-scroll-1::-webkit-scrollbar-button:increment::-webkit-scrollbar-button {
+    display: none;
+}
+
+.custom-scroll-1::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.custom-scroll-1::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+
+.custom-scroll-1::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}

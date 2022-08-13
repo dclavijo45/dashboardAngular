@@ -1,0 +1,9 @@
+.main-container {
+    width: 97vw;
+    height: 97vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
